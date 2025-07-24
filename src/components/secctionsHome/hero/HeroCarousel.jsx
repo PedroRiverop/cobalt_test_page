@@ -62,32 +62,26 @@ function HeroCarousel({ estado }) {
 
       <div className="hero-carousel-text">
         <motion.h1
-          className="animated-text"
-          style={{ whiteSpace: 'normal' }}
-          initial="hidden"
-          animate="visible"
-          variants={{
-            visible: {
-              transition: {
-                staggerChildren: 0.035
-              }
-            }
-          }}
-        >
-          {sentence.split('').map((char, index) => (
-            <motion.span
-              key={index}
-              variants={{
-                hidden: { opacity: 0, y: 20 },
-                visible: { opacity: 1, y: 0 }
-              }}
-              transition={{ duration: 0.4, ease: 'easeOut' }}
-            >
-              {char === ' ' ? '\u00A0' : char}
-            </motion.span>
-          ))}
-        </motion.h1>
+  className="animated-text"
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1 }}
+>
+  {sentence}
+</motion.h1>
+
+
+         <motion.div
+    className="hero-carousel-buttons"
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ delay: 1, duration: 0.6 }}
+  >
+    <button className="btn btn-outline" onClick={() => navigate('/gallery')}>Explore Projects</button>
+    <button className="btn btn-outline" onClick={() => navigate('/#contact')}>Contact</button>
+  </motion.div>
       </div>
+      
 
       <Slider {...settings}>
         {images.map((img, index) => (

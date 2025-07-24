@@ -77,17 +77,17 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-family: 'Playfair Display', serif;
   text-align: center;
   padding: 0 1rem;
   pointer-events: none;
+
 }
 
 .hero-carousel-text h1 {
-  font-size: 2.7rem;
-  font-weight: 400;
+  font-size: clamp(1.75rem, 5vw, 3.9rem);
+  font-weight: 300;
   opacity: 0;
-  white-space: nowrap;
+  white-space: normal;
   overflow: hidden;
   border-right: 0.1em solid rgba(255, 255, 255, 0.3);
   animation: fadeInWords 1.2s ease forwards;
@@ -245,14 +245,6 @@
    
   }
 
-  .hero-carousel-text h1 {
-    white-space: normal;
-    font-size: 1.5rem;
-    line-height: 1.4;
-    text-align: center;
-    max-width: 100%;
-    border: none;
-    word-break: break-word; 
 
   }
 
@@ -271,4 +263,37 @@
   .carousel-image {
     object-position: center;
   }
+
+
+.hero-carousel-buttons {
+  
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  pointer-events: auto;
+}
+
+
+
+.btn-main {
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-main:hover {
+  background: white;
+  color: black;
+}
+
+.btn-outline {
+  background: transparent;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.btn-outline:hover {
+  border-color: white;
 }
