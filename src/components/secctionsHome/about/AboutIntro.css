@@ -37,11 +37,10 @@
 }
 
 .aboutIntro-title {
-  font-family: 'Playfair Display', sans-serif;
+  
   font-weight: 500;
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  text-transform: uppercase;
   color: #111;
   letter-spacing: 1px;
 }
@@ -59,14 +58,14 @@
   max-width: 600px;
   height: auto;
   overflow: hidden;
-  border-radius: 12px;
+  
 }
 
 .bw-image {
   width: 100%;
   display: block;
   filter: grayscale(100%);
-  border-radius: 12px;
+  
 }
 
 .color-image {

@@ -38,7 +38,7 @@
   width: 98%;
   height: 340px;
   object-fit: cover;
-  border-radius: 10px;
+  
   transition: transform 0.4s ease;
   
 }
@@ -126,7 +126,7 @@ left: -19px;
 .service-tilted-card-sec {
   background: linear-gradient(135deg, #1a1a1a, #222);
   border: 1px solid #333;
-  border-radius: 12px;
+  
   padding: 2rem;
   width: 100%;
   max-width: 500px;

@@ -36,6 +36,7 @@
 
 .navbar-links {
   list-style: none;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   display: flex;
   gap: 2.5rem;
   margin: 0;
@@ -45,8 +46,8 @@
 .navbar-links li a {
   color: white;
   text-decoration: none;
-  font-family: 'Playfair Display', serif;
-  font-weight: 500;
+  
+  font-weight: 400;
   font-size: 1.1rem;
   letter-spacing: 1px;
   transition: color 0.3s ease;

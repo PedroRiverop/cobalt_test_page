@@ -1,32 +1,86 @@
-
-
 .intro-section {
+  position: relative;
   background-color: #f3f3f3; /* gris claro personalizado */
-  padding: 4rem 2rem;
+  padding: 6rem 1.5rem;
+  text-align: center;
+  min-height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  overflow: hidden;
 }
 
+/* Patrón de grilla tipo blueprint */
+.grid-pattern {
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Cg fill='none' stroke='%23000' stroke-width='1' opacity='0.06'%3E%3Cpath d='M10 4v12M4 10h12'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 40px 40px;
+  background-repeat: repeat;
+  z-index: 0;
+}
+
+
+/* Línea decorativa arriba del título */
+.line-divider {
+  width: 60px;
+  height: 2px;
+  background-color: #000;
+  margin: 0 auto 2rem;
+  opacity: 0.8;
+}
+
+/* Contenido centrado y elevado */
 .intro-content {
-  max-width: 700px;
-  animation: fadeIn 1.2s ease-out forwards;
+  position: relative;
+  z-index: 1;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .intro-title {
-  
-  font-size: 3.5rem;
-  margin-bottom: 1rem;
-  
-  letter-spacing: 1.5px;
-  color: #111;
+  font-size: clamp(2.5rem, 6vw, 3.75rem);
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
+}
+
+.intro-title .italic {
+  font-style: italic;
+  font-weight: 400;
 }
 
 .intro-subtitle {
- 
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
+  font-size: 1.125rem;
   color: #444;
+  margin-bottom: 2.5rem;
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
 }
 
+.intro-button {
+  display: flex;
+  justify-content: center;
+}
+
+/* Botón principal */
+.btn-global {
+  padding: 1rem 2.5rem;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-global:hover {
+  background-color: #222;
+  cursor: pointer;
+}

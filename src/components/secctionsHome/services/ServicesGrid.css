@@ -15,7 +15,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('../../../assets/home/servicesSection.jpg') center/cover no-repeat;
+  
   filter: grayscale(100%) brightness(1.2); /* blanco y negro + aclarado */
   z-index: -1;
 }
@@ -23,7 +23,7 @@
 .masonry-services-overlay {
   
   backdrop-filter: blur(2px);
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: #f3f3f3;
   padding: 0rem 2rem;
   border-radius: 0px;
   max-width: 1200px;
@@ -58,18 +58,20 @@
 }
 
 .masonry-card {
-  background: rgba(255, 255, 255, 0.06);
+  background: linear-gradient(to bottom, #e0e0e0, #f3f3f3);
   backdrop-filter: blur(6px);
   border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 12px;
+ 
   padding: 1.5rem;
   margin-bottom: 3rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25); /* 👈 le da profundidad */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+
 .masonry-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.25);
 }
 
 .masonry-icon {
@@ -81,13 +83,13 @@
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
   letter-spacing: 1px;
-  color: #fff;
+  color: #2d2d2d;
 }
 
 .masonry-description {
   font-family: 'Questrial', sans-serif;
   font-size: 0.95rem;
-  color: #ccc;
+  color: #383737;
   line-height: 1.5;
 }
 
@@ -97,15 +99,15 @@
   top: 50%;
   transform: translateY(-55%);
   font-size: 2.5rem;
-  color: white;
-  background: rgba(255, 255, 255, 0.08);
+  color: rgb(0, 0, 0);
+  
   backdrop-filter: blur(4px);
   padding: 0.1rem 1.1rem;
   border-radius: 50%;
   z-index: 10;
   cursor: pointer;
   transition: all 0.3s ease;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  
 }
 
 .custom-nav-arrow:hover {

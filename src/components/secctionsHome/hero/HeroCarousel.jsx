@@ -2,7 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import { useNavigate } from 'react-router-dom';
 import './HeroCarousel.css';
-import logo from '../../../assets/homeAssets/logoCobalt.png';
+import logo from '../../../assets/homeAssets/logoCobalt.webp';
 import ScrollIndicator from '../../buttons/ScrollIndicator';
 import { motion } from 'framer-motion';
 
@@ -10,12 +10,12 @@ import { motion } from 'framer-motion';
 import arizona1 from '../../../assets/home/arizona/hero1.jpg';
 import arizona2 from '../../../assets/home/arizona/hero2.jpg';
 import arizona3 from '../../../assets/home/arizona/hero3.jpg';
-import arizona4 from '../../../assets/home/arizona/hero4.jpg';
+
 
 import arkansas1 from '../../../assets/home/arkansas/hero1.jpg';
 import arkansas2 from '../../../assets/home/arkansas/hero2.jpg';
 import arkansas3 from '../../../assets/home/arkansas/hero3.jpg';
-import arkansas4 from '../../../assets/home/arkansas/hero4.jpg';
+
 
 const NextArrow = ({ onClick }) => (
   <div className="custom-arrow next" onClick={onClick}>›</div>
@@ -46,11 +46,11 @@ function HeroCarousel({ estado }) {
   const dataPorEstado = {
     arizona: {
       sentence: 'Your Trusted Partner for Commercial and Residential Solutions in Arizona',
-      images: [arizona1, arizona2, arizona3, arizona4]
+      images: [arizona1, arizona2, arizona3]
     },
     arkansas: {
       sentence: 'Arkansas’s Go-To Partner for Residential & Commercial Solutions',
-      images: [arkansas1, arkansas2, arkansas3, arkansas4]
+      images: [arkansas1, arkansas2, arkansas3]
     }
   };
 

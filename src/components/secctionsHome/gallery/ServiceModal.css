@@ -4,7 +4,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(0, 0, 0, 0.05);
   backdrop-filter: blur(100px);
   display: flex;
   align-items: center;
@@ -24,7 +24,7 @@
   background-color: #111111;
   color: #fff;
   padding: 2.5rem;
-  border-radius: 12px;
+
   max-width: 600px;
   width: 90%;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);

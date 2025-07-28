@@ -11,7 +11,7 @@ import ServiceModal from './ServiceModal'; // 👈
 import img1 from '../../../assets/home/gallery7.jpg';
 import img2 from '../../../assets/home/gallery3.jpg';
 import img3 from '../../../assets/home/gallery9.jpg';
-import img4 from '../../../assets/home/gallery4.jpg';
+import img4 from '../../../assets/home/gallery4.avif';
 import img5 from '../../../assets/home/gallery5.jpg';
 import img6 from '../../../assets/home/gallery6.jpg';
 import img7 from '../../../assets/home/gallery1.jpg';

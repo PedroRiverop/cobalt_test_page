@@ -46,32 +46,32 @@
   justify-content: center;
 }
 
-.side-menu-nav.visible {
+.side-menu-navx.visible {
   right: 0;
 }
 
-.side-menu-nav ul {
+.side-menu-navx ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.side-menu-nav ul li {
+.side-menu-navx ul li {
   margin: 1.5rem 0;
   font-family: 'Playfair Display', serif;
  
   font-size: 2.3rem;
   color: white;
   cursor: pointer;
-  text-align: right;
+  text-align: left;
   transition: color 0.3s ease;
 }
 
-.side-menu-nav ul li:hover {
+.side-menu-navx ul li:hover {
   color: #f0c27b;
 }
 
-.side-menu-nav a {
+.side-menu-navx a {
   color: inherit;
   text-decoration: none;
 }

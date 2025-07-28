@@ -70,18 +70,7 @@
 }
 
 /* Texto superpuesto al carrusel */
-.hero-carousel-text {
-  position: absolute;
-  z-index: 5;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-align: center;
-  padding: 0 1rem;
-  pointer-events: none;
 
-}
 
 .hero-carousel-text h1 {
   font-size: clamp(1.75rem, 5vw, 3.9rem);
@@ -234,15 +223,6 @@
     top: 1rem;
     left: 1rem;
     max-height: 150px;
-  }
-
-  .hero-carousel-text {
-    width: 100%;
-    padding: 0 1.5rem;
-    top: 55%;
-    left: 50%;
-    transform: translateX(-50%); /* SOLO horizontal */
-   
   }
 
 

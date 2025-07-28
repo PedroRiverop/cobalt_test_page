@@ -1,12 +1,18 @@
 // src/data/servicesData.js
 
-import kitchenImg from '../assets/home/gallery7.jpg';
-import electricalImg from '../assets/services/serv1.webp';
-import janitorialImg from '../assets/services/serv3.webp';
+import kitchenImg from '../assets/services/kitchen.jpg';
+import electricalImg from '../assets/services/electrical.jpg';
+import electrical from '../assets/services/serv3.webp';
+import janitorialImg from '../assets/services/janatorial.jpg';
 import sfr from '../assets/home/gallery9.jpg';
 import facilities from '../assets/home/gallery11.jpg';
-import janitorialImg2 from '../assets/home/gallery12.jpg';
+import emergency from '../assets/services/emergency.jpg';
 import Landscaping  from '../assets/home/gallery4.jpg';
+import btr from '../assets/services/btr.jpg';
+import planDesign from '../assets/services/plan-design.jpg';
+import house from '../assets/services/house.jpg';
+import residential from '../assets/home/gallery4.avif';
+import remodeling from '../assets/home/arizona/hero2.jpg';
 // ...importá el resto de imágenes según los servicios
 
 const servicesData = [
@@ -22,7 +28,7 @@ const servicesData = [
   },
   {
     title: 'Electrical and Lighting',
-    image: electricalImg,
+    image: electrical,
     details: [
       'Interior and exterior electrical system maintenance',
       'Lighting retrofits and upgrades',
@@ -56,15 +62,7 @@ const servicesData = [
       'Technical troubleshooting and diagnostics',
     ],
   },
-  {
-    title: janitorialImg,
-    image: janitorialImg2 ,
-    details: [
-      'General repairs for commercial and residential buildings',
-      'Emergency on-call repair teams',
-      'Scheduled maintenance check-ups',
-    ],
-  },
+  
   {
     title: 'HVAC and Mechanical',
     image: electricalImg,
@@ -85,7 +83,7 @@ const servicesData = [
   },
   {
     title: 'Emergency Services',
-    image: kitchenImg,
+    image: emergency,
     details: [
       '24/7 disaster response',
       'Flood and fire recovery',
@@ -94,7 +92,7 @@ const servicesData = [
   },
   {
     title: 'BTR (Build To Rent Solutions)',
-    image: electricalImg,
+    image: btr,
     details: [
       'New construction tailored for rental portfolios',
       'Collaboration with developers and investors',
@@ -112,7 +110,7 @@ const servicesData = [
   },
   {
     title: 'Construction Engineering & Plan Design',
-    image: kitchenImg,
+    image: house,
     details: [
       'Blueprint drafting and consultation',
       'Structural engineering and load analysis',
@@ -121,7 +119,7 @@ const servicesData = [
   },
   {
     title: 'General Construction, Commercial',
-    image: electricalImg,
+    image: planDesign,
     details: [
       'Ground-up commercial builds',
       'Permit management and inspections',
@@ -130,7 +128,7 @@ const servicesData = [
   },
   {
     title: 'General Construction, Residential',
-    image: janitorialImg,
+    image: residential,
     details: [
       'Custom home building',
       'Additions and major renovations',
@@ -139,7 +137,7 @@ const servicesData = [
   },
   {
     title: 'Construction Remodeling Solutions',
-    image: kitchenImg,
+    image: remodeling,
     details: [
       'Whole-building transformations',
       'Design/build delivery',
